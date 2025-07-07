@@ -17,7 +17,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email Us",
-      detail: "hello@techlab.com",
+      detail: "hello@Sahasra.com",
       description: "Send us an email anytime",
     },
     {

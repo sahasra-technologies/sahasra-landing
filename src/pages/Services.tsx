@@ -810,7 +810,7 @@ const Services = () => {
                 Why Choose Us
               </Badge>
               <h2 className="text-3xl md:text-4xl font-bold text-neutral-white mb-4">
-                The Nexus Advantage
+                The Sahasra Advantage
               </h2>
               <p className="text-xl text-neutral-text-gray max-w-2xl mx-auto">
                 We understand the business journey because we've been there

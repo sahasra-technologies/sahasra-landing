@@ -233,7 +233,7 @@ const Index = () => {
   const testimonials = [
     {
       quote:
-        "Nexus transformed our customer service with AI chatbots that understand context and provide intelligent responses. Customer satisfaction increased by 40%.",
+        "Sahasra transformed our customer service with AI chatbots that understand context and provide intelligent responses. Customer satisfaction increased by 40%.",
       author: "Sarah Chen",
       role: "CTO, TechFlow Solutions",
       company: "E-commerce Platform",

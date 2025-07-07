@@ -39,7 +39,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="text-2xl font-bold mb-4">
-              TechLab
+              Sahasra
               <span className="text-accent-orange">.</span>
             </div>
             <p className="text-neutral-text-gray mb-6 leading-relaxed">
@@ -117,7 +117,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-accent-orange mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-neutral-text-gray">hello@techlab.com</p>
+                  <p className="text-neutral-text-gray">hello@Sahasra.com</p>
                 </div>
               </div>
 
@@ -148,7 +148,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-neutral-text-gray text-sm">
-              © 2024 TechLab. All rights reserved.
+              © 2024 Sahasra. All rights reserved.
             </p>
 
             <div className="flex items-center space-x-6 mt-4 md:mt-0">

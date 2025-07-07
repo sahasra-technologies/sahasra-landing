@@ -73,7 +73,7 @@ const AboutSection = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full bg-accent-orange/20 border border-accent-orange/30 text-accent-orange text-sm font-medium mb-6">
             <Users className="w-4 h-4 mr-2" />
-            About TechLab
+            About Sahasra
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary-dark mb-6">
             Building the Future with Technology
@@ -95,7 +95,7 @@ const AboutSection = () => {
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
                 Founded with a vision to bridge the gap between innovative
-                technology and practical business solutions, TechLab has grown
+                technology and practical business solutions, Sahasra has grown
                 into a trusted partner for companies worldwide.
               </p>
               <p>

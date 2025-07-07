@@ -386,7 +386,7 @@ const About = () => {
                 >
                   <Brain className="w-4 h-4 mr-2" />
                 </motion.div>
-                About Nexus
+                About Sahasra
               </motion.div>
 
               <motion.h1
@@ -456,7 +456,7 @@ const About = () => {
                 From Idea to AI Innovation
               </h2>
               <p className="text-xl text-neutral-text-gray max-w-2xl mx-auto">
-                Nexus was born from our own experiences as technology
+                Sahasra was born from our own experiences as technology
                 entrepreneurs. We experienced firsthand the challenges of
                 growing businesses.
               </p>

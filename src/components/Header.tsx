@@ -106,7 +106,7 @@ const Header = () => {
                     transition={{ duration: 0.6 }}
                     className="flex items-center"
                   >
-                    Nexus
+                    Sahasra
                   </motion.div>
                   <motion.span
                     className="text-accent-orange ml-1"

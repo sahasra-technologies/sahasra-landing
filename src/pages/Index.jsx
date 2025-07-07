@@ -233,53 +233,53 @@ const Index = () => {
   const testimonials = [
     {
       quote:
-        "Nexus transformed our customer service with AI chatbots that understand context and provide intelligent responses. Customer satisfaction increased by 40%.",
-      author: "Sarah Chen",
-      role: "CTO, TechFlow Solutions",
-      company: "E-commerce Platform",
+        "Huge thanks to Sahasra Technologies for bringing our vision of PlaydateSport to life! The platform looks clean, performs seamlessly, and truly captures the spirit of sports and community. Their team was responsive, creative, and deeply committed to quality. We’re proud to have partnered with a team that understands both tech and passion.",
+      author: "Mohammad Rafi",
+      role: "CTO",
+      company: "PlayDate Sport",
       avatar: Users,
       results: "40% satisfaction increase",
     },
     {
       quote:
-        "Their computer vision solution automated our quality control process, reducing inspection time by 80% while improving accuracy.",
-      author: "Michael Rodriguez",
+        "Exceptional work by Sahasra Technologies on the Adnexify marketing page. The design is modern, user-friendly, and performance-drive, exactly what a growing brand needs. Their team demonstrated a deep understanding of both functionality and aesthetics, delivering a website that speaks to our audience and drives engagement. Truly a job well done.",
+      author: "Vikas Ambati",
       role: "Operations Director",
-      company: "Manufacturing Corp",
+      company: "Adnexify",
       avatar: Settings,
       results: "80% time reduction",
     },
-    {
-      quote:
-        "The predictive analytics model they built helps us forecast demand with 95% accuracy, optimizing our inventory management.",
-      author: "Emily Watson",
-      role: "Head of Analytics",
-      company: "RetailTech Inc",
-      avatar: TrendingUp,
-      results: "95% forecast accuracy",
-    },
+    // {
+    //   quote:
+    //     "The predictive analytics model they built helps us forecast demand with 95% accuracy, optimizing our inventory management.",
+    //   author: "Emily Watson",
+    //   role: "Head of Analytics",
+    //   company: "RetailTech Inc",
+    //   avatar: TrendingUp,
+    //   results: "95% forecast accuracy",
+    // },
   ];
 
   // Company achievements and metrics
   const achievements = [
     {
-      metric: "89+",
-      label: "AI Models Deployed",
-      description: "Successfully implemented across various industries",
+      metric: "AI & Machine Learning", // "89+",
+      label: "Models Deployed",
+      description: "Transform your business with intelligent AI solutions, from predictive analytics to natural language processing.",
       icon: Brain,
       color: "text-violet-400",
     },
     {
-      metric: "156",
-      label: "Happy Clients",
-      description: "Businesses transformed with intelligent solutions",
+      metric: "Apps",
+      label: "Mobile & Web Applications",
+      description: "Cross-platform mobile apps built with React Native, allowing you to launch on both iOS and Android simultaneously.",
       icon: Heart,
       color: "text-red-400",
     },
     {
-      metric: "98%",
-      label: "Success Rate",
-      description: "Projects delivered on time and within budget",
+      metric: "Computer Vision",
+      label: "Computer Vision Solutions",
+      description: "Advanced computer vision and image processing solutions for automated visual analysis and recognition tasks.",
       icon: Target,
       color: "text-green-400",
     },
@@ -693,8 +693,8 @@ const Index = () => {
                 {/* Quick Stats */}
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
                   {[
-                    { value: "89+", label: "AI Models" },
-                    { value: "156", label: "Projects" },
+                    { value: "AI", label: "AI Models" },
+                    { value: "Multiple", label: "Projects" },
                     { value: "98%", label: "Success Rate" },
                     { value: "24/7", label: "Tech Support" },
                   ].map((stat, index) => (
@@ -777,9 +777,9 @@ const Index = () => {
                           <span className="text-sm font-medium">
                             {features[activeFeature].benefit}
                           </span>
-                          <span className="text-lg font-bold">
+                          {/* <span className="text-lg font-bold">
                             {features[activeFeature].stats}
-                          </span>
+                          </span> */}
                         </div>
                       </CardContent>
                       {/* Animated background pattern */}
@@ -898,12 +898,12 @@ const Index = () => {
                       </div>
                       <div className="flex items-center justify-between text-sm">
                         <div>
-                          <span className="text-neutral-text-gray">
+                          {/* <span className="text-neutral-text-gray">
                             Timeline:{" "}
                           </span>
                           <span className="text-accent-orange font-medium">
                             {service.timeline}
-                          </span>
+                          </span> */}
                         </div>
                         <Badge
                           className={`bg-gradient-to-r ${service.color} text-white`}
@@ -981,9 +981,9 @@ const Index = () => {
                         <div className="font-semibold text-neutral-white">
                           {testimonials[visibleTestimonial].author}
                         </div>
-                        <div className="text-neutral-text-gray">
+                        {/* <div className="text-neutral-text-gray">
                           {testimonials[visibleTestimonial].role}
-                        </div>
+                        </div> */}
                         <div className="text-accent-orange text-sm">
                           {testimonials[visibleTestimonial].company}
                         </div>
@@ -1106,9 +1106,9 @@ const Index = () => {
                   {React.createElement(stat.icon, {
                     className: "w-8 h-8 text-accent-orange mx-auto mb-2",
                   })}
-                  <div className="text-2xl font-bold text-neutral-white">
+                  {/* <div className="text-2xl font-bold text-neutral-white">
                     {stat.value.toLocaleString()}
-                  </div>
+                  </div> */}
                   <div className="text-sm text-neutral-text-gray">
                     {stat.label}
                   </div>
