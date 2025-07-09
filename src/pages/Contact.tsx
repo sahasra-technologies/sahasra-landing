@@ -436,7 +436,7 @@ const Contact = () => {
                       <stat.icon className="w-6 h-6 text-accent-orange" />
                     </div>
                     <div className="text-2xl font-bold text-neutral-white">
-                      {stat.value}
+                      {/* {stat.value} */}
                     </div>
                     <div className="text-sm text-neutral-text-gray">
                       {stat.label}
@@ -871,7 +871,7 @@ const Contact = () => {
                     </p>
                     <Button
                       variant="outline"
-                      className="border-white text-white hover:bg-white hover:text-accent-orange"
+                      className="border-white text-accent-orange hover:bg-white hover:text-accent-orange"
                     >
                       <Calendar className="w-4 h-4 mr-2" />
                       Book Free Consultation
@@ -1195,7 +1195,7 @@ const Contact = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
+                  className="border-white text-accent-orange hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
                 >
                   <Phone className="mr-2 w-5 h-5" />
                   Call Now
