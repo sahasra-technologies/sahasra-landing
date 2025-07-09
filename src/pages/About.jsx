@@ -116,91 +116,91 @@ const About = () => {
   // Enhanced Team with more details
   const team = [
     {
-      name: "Alex Chen",
-      role: "Co-founder & CTO",
+      name: "Vemula Shanath Kumar",
+      role: "Co-founder & CEO",
       bio: "Full-stack developer and AI specialist with 10+ years experience. Previously built and sold a SaaS company. Expert in machine learning and generative AI implementations.",
       image: "/placeholder.svg",
-      skills: ["React", "Python", "TensorFlow", "AWS", "GenAI"],
+      skills: ["React", "Python", "TensorFlow", "GenAI"],
       background: "Former AI startup founder",
       passion: "Democratizing AI for businesses",
-      education: "Stanford CS, MIT AI Lab",
+      education: "Master's",
       achievements: [
-        "Built 50+ AI models",
-        "Published 12 ML papers",
+        "Built Multiple AI models",
+        "Published ML papers",
         "Led team of 25 engineers",
       ],
       social: {
-        github: "alexchen-ai",
+        github: "https://github.com/shanathvemula",
         linkedin: "alex-chen-ai",
         twitter: "alexchen_ai",
       },
     },
-    {
-      name: "Sarah Kim",
-      role: "Co-founder & CEO",
-      bio: "Product strategist and former AI consultant. Experienced in taking AI ideas from concept to market launch. Specializes in AI-driven product development and business strategy.",
-      image: "/placeholder.svg",
-      skills: ["Product Strategy", "AI Strategy", "Business Development"],
-      background: "Ex-McKinsey AI consultant",
-      passion: "AI product-market fit",
-      education: "Harvard MBA, Berkeley AI",
-      achievements: [
-        "Launched 15+ AI products",
-        "Raised $50M+ for AI startups",
-        "Advised 100+ AI companies",
-      ],
-      social: {
-        github: "sarahkim-ai",
-        linkedin: "sarah-kim-ai",
-        twitter: "sarahkim_ai",
-      },
-    },
-    {
-      name: "Mike Rodriguez",
-      role: "Lead Data Scientist",
-      bio: "Data science expert and ML engineer with deep expertise in computer vision and NLP. Former Google AI researcher with a passion for solving complex business problems with AI.",
-      image: "/placeholder.svg",
-      skills: ["Python", "PyTorch", "Computer Vision", "NLP", "MLOps"],
-      background: "Ex-Google AI Research",
-      passion: "Transforming data into insights",
-      education: "PhD Stanford AI, Google Brain",
-      achievements: [
-        "Published 20+ AI papers",
-        "3 patents in computer vision",
-        "Kaggle Grandmaster",
-      ],
-      social: {
-        github: "mike-rodriguez-ai",
-        linkedin: "mike-rodriguez-ai",
-        twitter: "mikerodriguez_ai",
-      },
-    },
-    {
-      name: "Emma Thompson",
-      role: "Head of AI Engineering",
-      bio: "AI engineering specialist focused on deploying large-scale machine learning systems. Expert in generative AI, LLMs, and building production-ready AI applications.",
-      image: "/placeholder.svg",
-      skills: ["LLMs", "GenAI", "Kubernetes", "Python", "Transformers"],
-      background: "Ex-OpenAI Engineer",
-      passion: "Scaling AI for everyone",
-      education: "MIT EECS, OpenAI Fellowship",
-      achievements: [
-        "Built GPT-4 infrastructure",
-        "Deployed 100+ ML models",
-        "AI ethics committee member",
-      ],
-      social: {
-        github: "emma-thompson-ai",
-        linkedin: "emma-thompson-ai",
-        twitter: "emmathompson_ai",
-      },
-    },
+    // {
+    //   name: "Sarah Kim",
+    //   role: "Co-founder & CEO",
+    //   bio: "Product strategist and former AI consultant. Experienced in taking AI ideas from concept to market launch. Specializes in AI-driven product development and business strategy.",
+    //   image: "/placeholder.svg",
+    //   skills: ["Product Strategy", "AI Strategy", "Business Development"],
+    //   background: "Ex-McKinsey AI consultant",
+    //   passion: "AI product-market fit",
+    //   education: "Harvard MBA, Berkeley AI",
+    //   achievements: [
+    //     "Launched 15+ AI products",
+    //     "Raised $50M+ for AI startups",
+    //     "Advised 100+ AI companies",
+    //   ],
+    //   social: {
+    //     github: "sarahkim-ai",
+    //     linkedin: "sarah-kim-ai",
+    //     twitter: "sarahkim_ai",
+    //   },
+    // },
+    // {
+    //   name: "Mike Rodriguez",
+    //   role: "Lead Data Scientist",
+    //   bio: "Data science expert and ML engineer with deep expertise in computer vision and NLP. Former Google AI researcher with a passion for solving complex business problems with AI.",
+    //   image: "/placeholder.svg",
+    //   skills: ["Python", "PyTorch", "Computer Vision", "NLP", "MLOps"],
+    //   background: "Ex-Google AI Research",
+    //   passion: "Transforming data into insights",
+    //   education: "PhD Stanford AI, Google Brain",
+    //   achievements: [
+    //     "Published 20+ AI papers",
+    //     "3 patents in computer vision",
+    //     "Kaggle Grandmaster",
+    //   ],
+    //   social: {
+    //     github: "mike-rodriguez-ai",
+    //     linkedin: "mike-rodriguez-ai",
+    //     twitter: "mikerodriguez_ai",
+    //   },
+    // },
+    // {
+    //   name: "Emma Thompson",
+    //   role: "Head of AI Engineering",
+    //   bio: "AI engineering specialist focused on deploying large-scale machine learning systems. Expert in generative AI, LLMs, and building production-ready AI applications.",
+    //   image: "/placeholder.svg",
+    //   skills: ["LLMs", "GenAI", "Kubernetes", "Python", "Transformers"],
+    //   background: "Ex-OpenAI Engineer",
+    //   passion: "Scaling AI for everyone",
+    //   education: "MIT EECS, OpenAI Fellowship",
+    //   achievements: [
+    //     "Built GPT-4 infrastructure",
+    //     "Deployed 100+ ML models",
+    //     "AI ethics committee member",
+    //   ],
+    //   social: {
+    //     github: "emma-thompson-ai",
+    //     linkedin: "emma-thompson-ai",
+    //     twitter: "emmathompson_ai",
+    //   },
+    // },
   ];
 
   // Company Timeline
   const timeline = [
     {
-      year: "2020",
+      year: "2023",
       title: "Company Founded",
       description:
         "Alex and Sarah met at a tech event and realized they shared the same vision: helping businesses succeed with technology.",
@@ -208,7 +208,7 @@ const About = () => {
       icon: Lightbulb,
     },
     {
-      year: "2021",
+      year: "2023",
       title: "First AI Project",
       description:
         "We took on our first project - helping a company implement custom generative AI content tools. The success gave us confidence in our approach.",
@@ -216,7 +216,7 @@ const About = () => {
       icon: Rocket,
     },
     {
-      year: "2022",
+      year: "2024",
       title: "Team Expansion",
       description:
         "Grew our team to include specialized AI engineers and data scientists. Established our AI-first development methodology.",
@@ -224,7 +224,7 @@ const About = () => {
       icon: Users,
     },
     {
-      year: "2023",
+      year: "2024",
       title: "AI Specialization",
       description:
         "Focused entirely on AI, ML, and data science solutions. Launched our comprehensive suite of AI services.",
@@ -232,8 +232,8 @@ const About = () => {
       icon: Brain,
     },
     {
-      year: "2024",
-      title: "Market Leadership",
+      year: "2025",
+      title: "Market Standup",
       description:
         "We're expanding our services and building tools to help even more businesses launch faster and more efficiently.",
       highlight: "Industry recognition",
@@ -428,10 +428,10 @@ const About = () => {
                         className: "w-6 h-6 text-accent-orange mr-2",
                       })}
                     </div>
-                    <div className="text-3xl md:text-4xl font-bold text-neutral-white mb-1">
+                    {/* <div className="text-3xl md:text-4xl font-bold text-neutral-white mb-1">
                       <Counter end={stat.value} />
                       {stat.suffix}
-                    </div>
+                    </div> */}
                     <div className="text-sm text-neutral-text-gray">
                       {stat.label}
                     </div>
@@ -651,7 +651,7 @@ const About = () => {
                       <p className="text-accent-orange font-medium mb-3">
                         {team[activeTeamMember].role}
                       </p>
-                      <div className="flex justify-center space-x-3">
+                      {/* <div className="flex justify-center space-x-3">
                         <Button
                           variant="ghost"
                           size="sm"
@@ -673,7 +673,7 @@ const About = () => {
                         >
                           <Twitter className="w-4 h-4" />
                         </Button>
-                      </div>
+                      </div> */}
                     </div>
 
                     {/* Details */}
@@ -905,7 +905,7 @@ const About = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
+                  className="border-white text-accent-orange hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
                 >
                   <Mail className="mr-2 w-5 h-5" />
                   Get in Touch
