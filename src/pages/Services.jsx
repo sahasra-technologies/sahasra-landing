@@ -94,16 +94,17 @@ const Services = () => {
         "Real-time AI insights",
       ],
       color: "from-blue-500 to-cyan-500",
-      duration: "4-8 weeks",
+      duration: "In weeks",
       approach: "AI-first methodology",
-      technologies: ["TensorFlow", "PyTorch", "Scikit-learn", "OpenAI API"],
+      technologies: ["TensorFlow", "PyTorch", "Scikit-learn", "GEN AI Model"],
       deliverables: [
         "Trained Models",
         "API Endpoints",
         "Documentation",
         "Monitoring Dashboard",
       ],
-      pricing: "Starting from $15,000",
+      pricing: "As per Project",
+      Customizability: "Custom-built to your industry & data"
     },
     {
       icon: Smartphone,
@@ -128,7 +129,8 @@ const Services = () => {
         "Backend API",
         "Admin Dashboard",
       ],
-      pricing: "Starting from $12,000",
+      pricing: "As per Project",
+      Customizability: "Mobile Apps with End-to-End Customization"
     },
     {
       icon: Code,
@@ -148,33 +150,33 @@ const Services = () => {
       approach: "Modern web standards",
       technologies: ["React", "Next.js", "TypeScript", "Tailwind CSS"],
       deliverables: ["Web Application", "Admin Panel", "API", "Deployment"],
-      pricing: "Starting from $8,000",
+      pricing: "As per Project",
     },
-    {
-      icon: Target,
-      title: "Rapid Prototyping",
-      description:
-        "Quickly validate your ideas with interactive prototypes before committing to full development.",
-      features: [
-        "Interactive design",
-        "User flow testing",
-        "Clickable prototype",
-        "Design validation",
-        "Investor ready",
-        "1-week delivery",
-      ],
-      color: "from-orange-500 to-red-500",
-      duration: "3-7 days",
-      approach: "Rapid validation",
-      technologies: ["Figma", "Framer", "React", "Tailwind CSS"],
-      deliverables: [
-        "Interactive Prototype",
-        "Design System",
-        "User Flow",
-        "Presentation",
-      ],
-      pricing: "Starting from $3,000",
-    },
+    // {
+    //   icon: Target,
+    //   title: "Rapid Prototyping",
+    //   description:
+    //     "Quickly validate your ideas with interactive prototypes before committing to full development.",
+    //   features: [
+    //     "Interactive design",
+    //     "User flow testing",
+    //     "Clickable prototype",
+    //     "Design validation",
+    //     "Investor ready",
+    //     "1-week delivery",
+    //   ],
+    //   color: "from-orange-500 to-red-500",
+    //   duration: "3-7 days",
+    //   approach: "Rapid validation",
+    //   technologies: ["Figma", "Framer", "React", "Tailwind CSS"],
+    //   deliverables: [
+    //     "Interactive Prototype",
+    //     "Design System",
+    //     "User Flow",
+    //     "Presentation",
+    //   ],
+    //   pricing: "As per Project",
+    // },
     {
       icon: Cloud,
       title: "Cloud Solutions",
@@ -198,7 +200,7 @@ const Services = () => {
         "Monitoring",
         "Documentation",
       ],
-      pricing: "Starting from $5,000",
+      pricing: "As per Project",
     },
     {
       icon: Brain,
@@ -225,7 +227,7 @@ const Services = () => {
         "Reports",
         "ML Models",
       ],
-      pricing: "Starting from $20,000",
+      pricing: "As per Project",
     },
     {
       icon: Brain,
@@ -247,62 +249,62 @@ const Services = () => {
       approach: "Deep learning models",
       technologies: ["OpenCV", "YOLO", "TensorFlow", "PyTorch"],
       deliverables: ["CV Models", "API Service", "Web Interface", "Mobile SDK"],
-      pricing: "Starting from $25,000",
+      pricing: "As per Project",
     },
-    {
-      icon: Brain,
-      title: "Natural Language Processing",
-      description:
-        "Advanced NLP solutions to understand, process, and generate human language for intelligent automation.",
-      features: [
-        "Sentiment Analysis & Monitoring",
-        "Chatbots & Virtual Assistants",
-        "Text Classification & Tagging",
-        "Language Translation Services",
-        "Information Extraction",
-        "Content Generation & Summarization",
-        "Voice Recognition & Processing",
-        "Document Intelligence",
-      ],
-      color: "from-cyan-500 to-blue-500",
-      duration: "6-14 weeks",
-      approach: "Transformer-based models",
-      technologies: ["BERT", "GPT", "spaCy", "Hugging Face"],
-      deliverables: [
-        "NLP Models",
-        "API Gateway",
-        "Web Dashboard",
-        "Integration",
-      ],
-      pricing: "Starting from $18,000",
-    },
-    {
-      icon: Brain,
-      title: "Generative AI Solutions",
-      description:
-        "Cutting-edge generative AI applications that create content, automate workflows, and enhance user experiences with AI-generated outputs.",
-      features: [
-        "Custom GPT & LLM Integration",
-        "AI Content Generation",
-        "Automated Code Generation",
-        "AI-Powered Creative Tools",
-        "Custom AI Assistants",
-        "Synthetic Data Generation",
-        "AI Image & Video Creation",
-        "Intelligent Document Processing",
-      ],
-      color: "from-violet-500 to-purple-500",
-      duration: "8-20 weeks",
-      approach: "Foundation model fine-tuning",
-      technologies: ["OpenAI GPT", "Claude", "Stable Diffusion", "LangChain"],
-      deliverables: [
-        "AI Application",
-        "Custom Models",
-        "API Services",
-        "User Interface",
-      ],
-      pricing: "Starting from $30,000",
-    },
+    // {
+    //   icon: Brain,
+    //   title: "Natural Language Processing",
+    //   description:
+    //     "Advanced NLP solutions to understand, process, and generate human language for intelligent automation.",
+    //   features: [
+    //     "Sentiment Analysis & Monitoring",
+    //     "Chatbots & Virtual Assistants",
+    //     "Text Classification & Tagging",
+    //     "Language Translation Services",
+    //     "Information Extraction",
+    //     "Content Generation & Summarization",
+    //     "Voice Recognition & Processing",
+    //     "Document Intelligence",
+    //   ],
+    //   color: "from-cyan-500 to-blue-500",
+    //   duration: "6-14 weeks",
+    //   approach: "Transformer-based models",
+    //   technologies: ["BERT", "GPT", "spaCy", "Hugging Face"],
+    //   deliverables: [
+    //     "NLP Models",
+    //     "API Gateway",
+    //     "Web Dashboard",
+    //     "Integration",
+    //   ],
+    //   pricing: "As per Project",
+    // },
+    // {
+    //   icon: Brain,
+    //   title: "Generative AI Solutions",
+    //   description:
+    //     "Cutting-edge generative AI applications that create content, automate workflows, and enhance user experiences with AI-generated outputs.",
+    //   features: [
+    //     "Custom GPT & LLM Integration",
+    //     "AI Content Generation",
+    //     "Automated Code Generation",
+    //     "AI-Powered Creative Tools",
+    //     "Custom AI Assistants",
+    //     "Synthetic Data Generation",
+    //     "AI Image & Video Creation",
+    //     "Intelligent Document Processing",
+    //   ],
+    //   color: "from-violet-500 to-purple-500",
+    //   duration: "8-20 weeks",
+    //   approach: "Foundation model fine-tuning",
+    //   technologies: ["Gen AI Model", "Stable Diffusion", "LangChain"],
+    //   deliverables: [
+    //     "AI Application",
+    //     "Custom Models",
+    //     "API Services",
+    //     "User Interface",
+    //   ],
+    //   pricing: "As per Project",
+    // },
   ];
 
   const process = [
@@ -342,13 +344,15 @@ const Services = () => {
       description:
         "We specialize in cutting-edge generative AI and foundation model implementations",
       icon: Brain,
-      stats: "50+ AI models deployed",
+      stats: "Multiple AI models deployed",
+      // stats: "50+ AI models deployed",
     },
     {
       title: "Fast Delivery",
       description: "AI solutions delivered in weeks, not months",
       icon: Timer,
-      stats: "3-8 week avg",
+      stats: "In week avg",
+      // stats: "3-8 week avg",
     },
     {
       title: "Transparent Pricing",
@@ -360,7 +364,8 @@ const Services = () => {
       title: "Modern Stack",
       description: "Latest technologies and best practices",
       icon: Star,
-      stats: "2024 tech stack",
+      stats: "Latest tech stack",
+      // stats: "2024 tech stack",
     },
   ];
 
@@ -582,10 +587,12 @@ const Services = () => {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="bg-primary-black/30 rounded-lg p-4">
                         <div className="text-sm text-neutral-text-gray">
-                          Duration
+                          Tailored For
+                          {/* Duration */}
                         </div>
                         <div className="text-xl font-bold text-accent-orange">
-                          {services[selectedService].duration}
+                          {/* {services[selectedService].duration} */}
+                          {services[selectedService].Customizability}
                         </div>
                       </div>
                       <div className="bg-primary-black/30 rounded-lg p-4">
@@ -718,7 +725,8 @@ const Services = () => {
                           : "text-neutral-text-gray"
                       }`}
                     >
-                      {service.duration}
+                      {/* {service.duration} */}
+                      {service.approach}
                     </p>
 
                     {selectedService === index && (
@@ -881,7 +889,7 @@ const Services = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
+                  className="border-white text-accent-orange hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
                 >
                   Schedule Consultation
                 </Button>

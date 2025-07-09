@@ -107,7 +107,7 @@ const Index = () => {
       title: "Generative AI Solutions",
       description:
         "Custom GPT integrations, content generation, and AI assistants that transform your business operations",
-      tech: ["OpenAI GPT", "Claude", "LangChain", "Custom Models"],
+      tech: ["Gen AI", "Claude", "LangChain", "Custom Models"],
       benefit: "10x productivity boost",
       icon: Brain,
       color: "from-violet-500 to-purple-500",
@@ -298,7 +298,7 @@ const Index = () => {
       category: "AI & Machine Learning",
       technologies: [
         {
-          name: "OpenAI GPT",
+          name: "Gen AI",
           icon: Brain,
           description: "Large language models",
         },
