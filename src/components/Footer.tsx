@@ -16,6 +16,7 @@ const Footer = () => {
     "Computer Vision",
     "Natural Language Processing",
     "Predictive Analytics",
+    "Web & Mobile Applications"
   ];
 
   const company = [
@@ -79,7 +80,7 @@ const Footer = () => {
               {services.map((service, index) => (
                 <li key={index}>
                   <a
-                    href="#"
+                    href="/services"
                     className="text-neutral-text-gray hover:text-white transition-colors duration-200"
                   >
                     {service}
@@ -95,7 +96,31 @@ const Footer = () => {
               Company
             </h3>
             <ul className="space-y-3">
-              {company.map((item, index) => (
+              <li>
+                  <a
+                    href="/about"
+                    className="text-neutral-text-gray hover:text-white transition-colors duration-200"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/services"
+                    className="text-neutral-text-gray hover:text-white transition-colors duration-200"
+                  >
+                    All Services
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/contact"
+                    className="text-neutral-text-gray hover:text-white transition-colors duration-200"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              {/* {company.map((item, index) => (
                 <li key={index}>
                   <a
                     href="#"
@@ -104,7 +129,7 @@ const Footer = () => {
                     {item}
                   </a>
                 </li>
-              ))}
+              ))} */}
             </ul>
           </div>
 
@@ -117,14 +142,14 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-accent-orange mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-neutral-text-gray">hello@Sahasra.com</p>
+                  <p className="text-neutral-text-gray">sahasratechnologysolutions@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-3">
                 <Phone className="w-5 h-5 text-accent-orange mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="text-neutral-text-gray">+1 (555) 123-4567</p>
+                  <p className="text-neutral-text-gray">+91 9908564639</p>
                 </div>
               </div>
 
@@ -132,9 +157,11 @@ const Footer = () => {
                 <MapPin className="w-5 h-5 text-accent-orange mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="text-neutral-text-gray">
-                    123 Tech Street
+                    5-68, Raja Street, Atmakur,
                     <br />
-                    Silicon Valley, CA 94025
+                    Nandyal, Andhra Pradesh
+                    <br />
+                    518422
                   </p>
                 </div>
               </div>

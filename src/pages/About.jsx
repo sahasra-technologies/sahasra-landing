@@ -49,8 +49,10 @@ import {
   Twitter,
   Mail,
 } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 const About = () => {
+  const navigate = useNavigate()
   const [expandedValue, setExpandedValue] = useState(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [currentMilestone, setCurrentMilestone] = useState(0);

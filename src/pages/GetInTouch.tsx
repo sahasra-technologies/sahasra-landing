@@ -129,24 +129,24 @@ const GetInTouch = () => {
     {
       icon: Phone,
       title: "Call Us",
-      detail: "+1 (415) 555-Sahasra",
+      detail: "+91 9908564639",
       description: "Direct line to our AI specialists",
       action: "tel:+91990856439",
     },
-    {
-      icon: MessageCircle,
-      title: "Live Chat",
-      detail: "Available 24/7",
-      description: "Instant support for urgent AI projects",
-      action: "#",
-    },
-    {
-      icon: Calendar,
-      title: "Schedule Meeting",
-      detail: "Book a consultation",
-      description: "30-min AI strategy session",
-      action: "#",
-    },
+    // {
+    //   icon: MessageCircle,
+    //   title: "Live Chat",
+    //   detail: "Available 24/7",
+    //   description: "Instant support for urgent AI projects",
+    //   action: "#",
+    // },
+    // {
+    //   icon: Calendar,
+    //   title: "Schedule Meeting",
+    //   detail: "Book a consultation",
+    //   description: "30-min AI strategy session",
+    //   action: "#",
+    // },
   ];
 
   // Office locations
@@ -780,12 +780,12 @@ const GetInTouch = () => {
                         </Select>
                       </div> */}
 
-                      {/* <div>
+                      <div>
                         <label
                           htmlFor="projectDescription"
                           className="block text-sm font-medium text-neutral-white mb-2"
                         >
-                          Project Description *
+                          Description *
                         </label>
                         <Textarea
                           id="projectDescription"
@@ -800,7 +800,7 @@ const GetInTouch = () => {
                           }
                           required
                         />
-                      </div> */}
+                      </div>
 
                       {/* <div>
                         <label

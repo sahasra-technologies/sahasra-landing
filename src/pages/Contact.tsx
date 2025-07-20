@@ -68,8 +68,10 @@ import {
   ExternalLink,
 } from "lucide-react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 const Contact = () => {
+  const navigate = useNavigate()
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -129,24 +131,24 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      detail: "+1 (415) 555-Sahasra",
+      detail: "+91 9908564639",
       description: "Direct line to our AI specialists",
       action: "tel:+91990856439",
     },
-    {
-      icon: MessageCircle,
-      title: "Live Chat",
-      detail: "Available 24/7",
-      description: "Instant support for urgent AI projects",
-      action: "#",
-    },
-    {
-      icon: Calendar,
-      title: "Schedule Meeting",
-      detail: "Book a consultation",
-      description: "30-min AI strategy session",
-      action: "#",
-    },
+    // {
+    //   icon: MessageCircle,
+    //   title: "Live Chat",
+    //   detail: "Available 24/7",
+    //   description: "Instant support for urgent AI projects",
+    //   action: "#",
+    // },
+    // {
+    //   icon: Calendar,
+    //   title: "Schedule Meeting",
+    //   detail: "Book a consultation",
+    //   description: "30-min AI strategy session",
+    //   action: "#",
+    // },
   ];
 
   // Office locations
@@ -902,6 +904,7 @@ const Contact = () => {
                     <Button
                       variant="outline"
                       className="border-white text-accent-orange hover:bg-white hover:text-accent-orange"
+                      onClick={() => navigate("/getintouch")}
                     >
                       <Calendar className="w-4 h-4 mr-2" />
                       Book Free Consultation
@@ -1105,10 +1108,10 @@ const Contact = () => {
                         </div>
                       </div>
 
-                      <Button className="bg-accent-orange hover:bg-accent-orange-light text-white">
+                      {/* <Button className="bg-accent-orange hover:bg-accent-orange-light text-white">
                         <MapPin className="w-4 h-4 mr-2" />
                         Get Directions
-                      </Button>
+                      </Button> */}
                     </div>
                   </div>
                 </CardContent>
@@ -1220,7 +1223,7 @@ const Contact = () => {
                 <Button
                   size="lg"
                   className="bg-white text-accent-orange hover:bg-neutral-100 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
-                  onClick={() => window.open("mailto:sahasratechnologysolutions@gmail.com")}
+                  onClick={() => navigate("/getintouch")}
                 >
                   Get Started Today
                   <ArrowRight className="ml-2 w-5 h-5" />

@@ -3,8 +3,10 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Sparkles, Rocket } from "lucide-react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate()
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
@@ -277,9 +279,10 @@ const Header = () => {
               <Button
                 className="w-full bg-accent-orange hover:bg-accent-orange-light text-white border-none"
                 size="sm"
+                onClick={() => navigate("/getintouch")}
               >
                 <Rocket className="w-4 h-4 mr-2" />
-                Launch Call
+                Get in Touch
               </Button>
             </motion.div>
           </div>
