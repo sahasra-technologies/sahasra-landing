@@ -50,8 +50,10 @@ import {
   LineChart,
   PieChart,
 } from "lucide-react";
+import { useNavigate } from 'react-router-dom';
 
 const Services = () => {
+  const navigate = useNavigate()
   const [selectedService, setSelectedService] = useState(0);
   const [hoveredCard, setHoveredCard] = useState(null);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -492,17 +494,19 @@ const Services = () => {
                 <Button
                   size="lg"
                   className="bg-accent-orange hover:bg-accent-orange-light text-neutral-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  onClick={() => navigate('/contact')}
                 >
-                  Explore Our Services
-                  <ArrowRight className="ml-2 w-5 h-5" />
+                Contact us
+                <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-accent-orange text-accent-orange hover:bg-accent-orange hover:text-neutral-white px-8 py-4 rounded-xl transition-all duration-300"
+                variant="outline"
+                size="lg"
+                className="border-accent-orange text-accent-orange hover:bg-accent-orange hover:text-neutral-white px-8 py-4 rounded-xl transition-all duration-300"
+                onClick={() => navigate('/getintouch')}
                 >
-                  <Play className="mr-2 w-5 h-5" />
-                  Watch Demo
+                <Play className="mr-2 w-5 h-5" />
+                Book a Demo
                 </Button>
               </motion.div>
             </motion.div>
@@ -882,6 +886,7 @@ const Services = () => {
                 <Button
                   size="lg"
                   className="bg-white text-accent-orange hover:bg-neutral-100 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  onClick={() => navigate('/contact')}
                 >
                   Start Your Project
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -890,6 +895,7 @@ const Services = () => {
                   variant="outline"
                   size="lg"
                   className="border-white text-accent-orange hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
+                  onClick={() => navigate('/getintouch')}
                 >
                   Schedule Consultation
                 </Button>

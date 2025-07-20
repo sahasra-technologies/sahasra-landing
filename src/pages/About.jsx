@@ -898,6 +898,7 @@ const About = () => {
                 <Button
                   size="lg"
                   className="bg-white text-accent-orange hover:bg-neutral-100 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  onClick={() => navigate('/contact')}
                 >
                   Start Your Project
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -906,9 +907,10 @@ const About = () => {
                   variant="outline"
                   size="lg"
                   className="border-white text-accent-orange hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
+                  onClick={() => navigate('/getintouch')}
                 >
                   <Mail className="mr-2 w-5 h-5" />
-                  Get in Touch
+                  Schedule Consultation
                 </Button>
               </div>
             </motion.div>
