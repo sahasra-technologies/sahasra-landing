@@ -71,8 +71,10 @@ import {
   ChevronDown,
   Pause,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [activeFeature, setActiveFeature] = useState(0);
@@ -676,6 +678,7 @@ const Index = () => {
                   <Button
                     size="lg"
                     className="bg-accent-orange hover:bg-accent-orange-light text-neutral-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                    onClick={() => navigate("/services")}
                   >
                     Explore All Our Solutions
                     <ArrowRight className="ml-2 w-5 h-5" />

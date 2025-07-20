@@ -71,8 +71,10 @@ import {
   ChevronDown,
   Pause,
 } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate()
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [activeFeature, setActiveFeature] = useState(0);
@@ -676,6 +678,7 @@ const Index = () => {
                   <Button
                     size="lg"
                     className="bg-accent-orange hover:bg-accent-orange-light text-neutral-white font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                    onClick={() => navigate('/services')}
                   >
                     Explore All Our Solutions
                     <ArrowRight className="ml-2 w-5 h-5" />
@@ -684,9 +687,10 @@ const Index = () => {
                     variant="outline"
                     size="lg"
                     className="border-accent-orange text-accent-orange hover:bg-accent-orange hover:text-neutral-white px-8 py-4 rounded-xl transition-all duration-300"
+                    onClick={() => navigate('/getintouch')}
                   >
                     <Play className="mr-2 w-5 h-5" />
-                    Watch Tech Demo
+                    Book a Demo
                   </Button>
                 </div>
 
@@ -921,6 +925,7 @@ const Index = () => {
               <Button
                 size="lg"
                 className="bg-accent-orange hover:bg-accent-orange-light text-white px-8 py-4 rounded-xl"
+                onClick={() => navigate('services')}
               >
                 View All Services
                 <ArrowRight className="ml-2 w-5 h-5" />
@@ -1206,6 +1211,7 @@ const Index = () => {
                 <Button
                   size="lg"
                   className="bg-white text-accent-orange hover:bg-neutral-100 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
+                  onClick={() => navigate('/contact')}
                 >
                   Start Your Tech Project
                   <ArrowRight className="ml-2 w-5 h-5" />
@@ -1213,7 +1219,8 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="border-white text-white hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
+                  className="border-white text-accent-orange hover:bg-white hover:text-accent-orange px-8 py-4 rounded-xl transition-all duration-300"
+                  onClick={() => navigate('/getintouch')}
                 >
                   <Calendar className="mr-2 w-5 h-5" />
                   Book Free Consultation

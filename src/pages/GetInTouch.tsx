@@ -69,7 +69,7 @@ import {
 } from "lucide-react";
 import axios from "axios";
 
-const Contact = () => {
+const GetInTouch = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -479,7 +479,7 @@ const Contact = () => {
         </section>
 
         {/* Contact Methods */}
-        <section className="py-20 bg-gradient-to-b from-secondary-dark to-primary-dark">
+        {/* <section className="py-20 bg-gradient-to-b from-secondary-dark to-primary-dark">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <motion.div className="text-center mb-16" {...fadeInUp}>
               <Badge
@@ -539,7 +539,7 @@ const Contact = () => {
               ))}
             </motion.div>
           </div>
-        </section>
+        </section> */}
 
         {/* Contact Form */}
         <section className="py-20 bg-gradient-to-b from-primary-dark to-secondary-dark">
@@ -556,10 +556,10 @@ const Contact = () => {
                     variant="outline"
                     className="mb-4 text-accent-orange border-accent-orange"
                   >
-                    Start Your Project
+                    Contact us
                   </Badge>
                   <h2 className="text-3xl font-bold text-neutral-white mb-4">
-                    Tell Us About Your Vision
+                    Connect our team
                   </h2>
                   <p className="text-neutral-text-gray">
                     Fill out the form below and we'll get back to you within 24
@@ -652,7 +652,7 @@ const Contact = () => {
                         </div>
                       </div>
 
-                      <div className="grid md:grid-cols-2 gap-4">
+                      {/* <div className="grid md:grid-cols-2 gap-4">
                         <div>
                           <label
                             htmlFor="company"
@@ -689,10 +689,10 @@ const Contact = () => {
                             }
                           />
                         </div>
-                      </div>
+                      </div> */}
 
                       {/* Project Details */}
-                      <div className="grid md:grid-cols-2 gap-4">
+                      {/* <div className="grid md:grid-cols-2 gap-4">
                         <div>
                           <label
                             htmlFor="service"
@@ -749,9 +749,9 @@ const Contact = () => {
                             </SelectContent>
                           </Select>
                         </div>
-                      </div>
+                      </div> */}
 
-                      <div>
+                      {/* <div>
                         <label
                           htmlFor="timeline"
                           className="block text-sm font-medium text-neutral-white mb-2"
@@ -778,9 +778,9 @@ const Contact = () => {
                             ))}
                           </SelectContent>
                         </Select>
-                      </div>
+                      </div> */}
 
-                      <div>
+                      {/* <div>
                         <label
                           htmlFor="projectDescription"
                           className="block text-sm font-medium text-neutral-white mb-2"
@@ -800,9 +800,9 @@ const Contact = () => {
                           }
                           required
                         />
-                      </div>
+                      </div> */}
 
-                      <div>
+                      {/* <div>
                         <label
                           htmlFor="additionalInfo"
                           className="block text-sm font-medium text-neutral-white mb-2"
@@ -818,7 +818,7 @@ const Contact = () => {
                             handleInputChange("additionalInfo", e.target.value)
                           }
                         />
-                      </div>
+                      </div> */}
 
                       {/* Submit Button */}
                       <Button
@@ -881,326 +881,8 @@ const Contact = () => {
                 </Card>
               </motion.div>
 
-              {/* Side Information */}
-              <motion.div
-                className="space-y-8"
-                initial={{ opacity: 0, x: 50 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.8 }}
-              >
-                {/* Quick Consultation */}
-                <Card className="bg-gradient-to-br from-accent-orange to-accent-orange-light text-white">
-                  <CardContent className="p-8">
-                    <h3 className="text-2xl font-bold mb-4">
-                      Free AI Consultation
-                    </h3>
-                    <p className="mb-6 opacity-90">
-                      Get a 30-minute free consultation to discuss your AI
-                      strategy, identify opportunities, and create a roadmap for
-                      your AI transformation.
-                    </p>
-                    <Button
-                      variant="outline"
-                      className="border-white text-accent-orange hover:bg-white hover:text-accent-orange"
-                    >
-                      <Calendar className="w-4 h-4 mr-2" />
-                      Book Free Consultation
-                    </Button>
-                  </CardContent>
-                </Card>
 
-                {/* Resources */}
-                <Card className="bg-gradient-to-br from-primary-black/60 to-secondary-dark/60 border-primary-light/20">
-                  <CardContent className="p-8">
-                    <h3 className="text-xl font-semibold text-neutral-white mb-6">
-                      AI Resources
-                    </h3>
-                    <div className="space-y-4">
-                      {[
-                        {
-                          title: "AI Implementation Guide",
-                          description: "Step-by-step guide for AI adoption",
-                          icon: BookOpen,
-                        },
-                        {
-                          title: "Case Studies",
-                          description: "Real AI success stories",
-                          icon: FileText,
-                        },
-                        {
-                          title: "ROI Calculator",
-                          description: "Calculate your AI investment returns",
-                          icon: BarChart3,
-                        },
-                      ].map((resource, index) => (
-                        <motion.div
-                          key={index}
-                          className="flex items-start space-x-3 p-3 rounded-lg hover:bg-primary-black/40 transition-colors cursor-pointer"
-                          whileHover={{ x: 5 }}
-                        >
-                          <resource.icon className="w-5 h-5 text-accent-orange mt-1" />
-                          <div>
-                            <div className="text-neutral-white font-medium">
-                              {resource.title}
-                            </div>
-                            <div className="text-neutral-text-gray text-sm">
-                              {resource.description}
-                            </div>
-                          </div>
-                          <ExternalLink className="w-4 h-4 text-neutral-text-gray ml-auto" />
-                        </motion.div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-
-                {/* Office Locations Quick */}
-                <Card className="bg-gradient-to-br from-primary-black/60 to-secondary-dark/60 border-primary-light/20">
-                  <CardContent className="p-8">
-                    <h3 className="text-xl font-semibold text-neutral-white mb-6">
-                      Our Locations
-                    </h3>
-                    <div className="space-y-4">
-                      {offices.map((office, index) => (
-                        <motion.div
-                          key={index}
-                          className="flex items-start space-x-3 p-3 rounded-lg hover:bg-primary-black/40 transition-colors cursor-pointer"
-                          whileHover={{ x: 5 }}
-                          onClick={() => setSelectedOffice(index)}
-                        >
-                          <Building className="w-5 h-5 text-accent-orange mt-1" />
-                          <div>
-                            <div className="text-neutral-white font-medium">
-                              {office.name}
-                            </div>
-                            <div className="text-neutral-text-gray text-sm">
-                              {office.team} • {office.specialties[0]}
-                            </div>
-                          </div>
-                          <ArrowRight className="w-4 h-4 text-neutral-text-gray ml-auto" />
-                        </motion.div>
-                      ))}
-                    </div>
-                  </CardContent>
-                </Card>
-              </motion.div>
             </div>
-          </div>
-        </section>
-
-        {/* Office Details */}
-        <section className="py-20 bg-gradient-to-b from-secondary-dark to-primary-black">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div className="text-center mb-16" {...fadeInUp}>
-              <Badge
-                variant="outline"
-                className="mb-4 text-accent-orange border-accent-orange"
-              >
-                Visit Us
-              </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-white mb-4">
-                Our Global Offices
-              </h2>
-              <p className="text-xl text-neutral-text-gray max-w-2xl mx-auto">
-                Come visit our offices around the world. Coffee's always brewing
-                and we love meeting fellow entrepreneurs!
-              </p>
-            </motion.div>
-
-            {/* Office Navigation */}
-            <div className="flex justify-center mb-12">
-              <div className="flex space-x-2 bg-primary-black/50 rounded-lg p-1">
-                {offices.map((office, index) => (
-                  <button
-                    key={index}
-                    onClick={() => setSelectedOffice(index)}
-                    className={`px-4 py-2 rounded-md text-sm font-medium transition-all ${
-                      selectedOffice === index
-                        ? "bg-accent-orange text-white"
-                        : "text-neutral-text-gray hover:text-white"
-                    }`}
-                  >
-                    {office.name.split(" ")[0]}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Selected Office Details */}
-            <motion.div
-              key={selectedOffice}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="max-w-4xl mx-auto"
-            >
-              <Card className="bg-gradient-to-br from-primary-black/60 to-secondary-dark/60 border-primary-light/20">
-                <CardContent className="p-8">
-                  <div className="grid md:grid-cols-2 gap-8">
-                    {/* Office Image */}
-                    <div className="aspect-video bg-gradient-to-br from-accent-orange/20 to-accent-orange-light/20 rounded-lg flex items-center justify-center">
-                      <Building className="w-16 h-16 text-accent-orange" />
-                    </div>
-
-                    {/* Office Info */}
-                    <div className="space-y-6">
-                      <div>
-                        <div className="flex items-center space-x-3 mb-2">
-                          <h3 className="text-2xl font-bold text-neutral-white">
-                            {offices[selectedOffice].name}
-                          </h3>
-                          {offices[selectedOffice].isHeadquarters && (
-                            <Badge className="bg-accent-orange/20 text-accent-orange">
-                              HQ
-                            </Badge>
-                          )}
-                        </div>
-                        <p className="text-neutral-text-gray">
-                          {offices[selectedOffice].description}
-                        </p>
-                      </div>
-
-                      <div className="space-y-3">
-                        <div className="flex items-center space-x-3">
-                          <MapPin className="w-5 h-5 text-accent-orange" />
-                          <span className="text-neutral-white">
-                            {offices[selectedOffice].address}
-                          </span>
-                        </div>
-                        <div className="flex items-center space-x-3">
-                          <Phone className="w-5 h-5 text-accent-orange" />
-                          <span className="text-neutral-white">
-                            {offices[selectedOffice].phone}
-                          </span>
-                        </div>
-                        <div className="flex items-center space-x-3">
-                          <Mail className="w-5 h-5 text-accent-orange" />
-                          <span className="text-neutral-white">
-                            {offices[selectedOffice].email}
-                          </span>
-                        </div>
-                        <div className="flex items-center space-x-3">
-                          <Clock className="w-5 h-5 text-accent-orange" />
-                          <span className="text-neutral-white">
-                            {offices[selectedOffice].hours}
-                          </span>
-                        </div>
-                      </div>
-
-                      <div>
-                        <h4 className="text-neutral-white font-semibold mb-3">
-                          Specialties
-                        </h4>
-                        <div className="flex flex-wrap gap-2">
-                          {offices[selectedOffice].specialties.map(
-                            (specialty, idx) => (
-                              <Badge
-                                key={idx}
-                                className="bg-accent-orange/20 text-accent-orange"
-                              >
-                                {specialty}
-                              </Badge>
-                            ),
-                          )}
-                        </div>
-                      </div>
-
-                      <Button className="bg-accent-orange hover:bg-accent-orange-light text-white">
-                        <MapPin className="w-4 h-4 mr-2" />
-                        Get Directions
-                      </Button>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </motion.div>
-          </div>
-        </section>
-
-        {/* FAQ Section */}
-        <section className="py-20 bg-gradient-to-b from-primary-black to-secondary-dark">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <motion.div className="text-center mb-16" {...fadeInUp}>
-              <Badge
-                variant="outline"
-                className="mb-4 text-accent-orange border-accent-orange"
-              >
-                FAQ
-              </Badge>
-              <h2 className="text-3xl md:text-4xl font-bold text-neutral-white mb-4">
-                Frequently Asked Questions
-              </h2>
-              <p className="text-xl text-neutral-text-gray">
-                Quick answers to common questions business owners ask us.
-              </p>
-            </motion.div>
-
-            <motion.div
-              className="space-y-4"
-              variants={staggerContainer}
-              initial="initial"
-              animate="animate"
-            >
-              {faqs.map((faq, index) => (
-                <motion.div
-                  key={index}
-                  variants={fadeInUp}
-                  className="border border-primary-light/20 rounded-lg"
-                >
-                  <button
-                    className="w-full text-left p-6 hover:bg-primary-black/40 transition-colors flex items-center justify-between"
-                    onClick={() =>
-                      setExpandedFaq(expandedFaq === index ? null : index)
-                    }
-                  >
-                    <span className="text-neutral-white font-semibold">
-                      {faq.question}
-                    </span>
-                    <motion.div
-                      animate={{
-                        rotate: expandedFaq === index ? 180 : 0,
-                      }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      <ChevronDown className="w-5 h-5 text-accent-orange" />
-                    </motion.div>
-                  </button>
-                  <motion.div
-                    initial={false}
-                    animate={{
-                      height: expandedFaq === index ? "auto" : 0,
-                      opacity: expandedFaq === index ? 1 : 0,
-                    }}
-                    transition={{ duration: 0.3 }}
-                    className="overflow-hidden"
-                  >
-                    <div className="px-6 pb-6">
-                      <p className="text-neutral-text-gray leading-relaxed">
-                        {faq.answer}
-                      </p>
-                      <Badge
-                        variant="outline"
-                        className="mt-3 text-accent-orange border-accent-orange/50"
-                      >
-                        {faq.category}
-                      </Badge>
-                    </div>
-                  </motion.div>
-                </motion.div>
-              ))}
-            </motion.div>
-
-            <motion.div className="text-center mt-12" {...fadeInUp}>
-              <p className="text-neutral-text-gray mb-4">
-                Still have questions about your business?
-              </p>
-              <Button 
-              className="bg-accent-orange hover:bg-accent-orange-light text-white"
-              onClick={() => window.open("mailto:sahasratechnologysolutions@gmail.com")}>
-                <MessageCircle className="w-4 h-4 mr-2" />
-                Ask a Question
-              </Button>
-            </motion.div>
           </div>
         </section>
 
@@ -1217,12 +899,14 @@ const Contact = () => {
                 and drive real results.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+    
                 <Button
                   size="lg"
                   className="bg-white text-accent-orange hover:bg-neutral-100 font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                   onClick={() => window.open("mailto:sahasratechnologysolutions@gmail.com")}
                 >
-                  Get Started Today
+                  <Mail className="ml-2 w-5 h-5" />
+                  Maill Now
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
                 <Button
@@ -1245,4 +929,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default GetInTouch;
