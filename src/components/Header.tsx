@@ -199,6 +199,7 @@ const Header = () => {
                 <Button
                   className="bg-accent-orange hover:bg-accent-orange-light text-white border-none relative overflow-hidden"
                   size="sm"
+                  onClick={() => navigate("/getintouch")}
                 >
                   <motion.div
                     className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent"
@@ -207,7 +208,7 @@ const Header = () => {
                     transition={{ duration: 0.6 }}
                   />
                   <Rocket className="w-4 h-4 mr-2" />
-                  Launch Call
+                  Get in Touch
                 </Button>
               </motion.div>
 
