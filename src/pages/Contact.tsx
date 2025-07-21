@@ -302,7 +302,7 @@ const Contact = () => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
 
     // Make actual API request
-    const response = await axios.post("/api/contact", formData);
+    const response = await axios.post("http://157.173.195.249:8010/send-json-mail", formData);
 
     if (response.status === 200 || response.status === 201) {
       setSubmitStatus("success");
