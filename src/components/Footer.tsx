@@ -178,7 +178,7 @@ const Footer = () => {
               © 2024 Sahasra. All rights reserved.
             </p>
 
-            <div className="flex items-center space-x-6 mt-4 md:mt-0">
+            {/* <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <a
                 href="#"
                 className="text-neutral-text-gray hover:text-white text-sm transition-colors duration-200"
@@ -197,7 +197,7 @@ const Footer = () => {
               >
                 <ArrowUp className="w-4 h-4" />
               </button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
